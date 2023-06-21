@@ -1,0 +1,13 @@
+flag-only-for-admin:
+  variations:
+    admin: true
+    other: false
+  targeting:
+    - query: role eq "admin"
+      percentage:
+        admin: 100
+        other: 0
+  defaultRule:
+    percentage:
+      admin: 0
+      other: 100
